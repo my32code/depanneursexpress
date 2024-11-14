@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plomberie - Dépanneurs Express</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+    <!-- En-tête de la page -->
+    <header class="bg-light text-center py-4">
+        <h1 class="display-5">Dépannage en Plomberie</h1>
+        <p class="lead">Choisissez le type de problème pour obtenir une assistance rapide.</p>
+    </header>
+
+    <!-- Section des pannes courantes avec icônes -->
+    <section class="container py-5">
+        <h2 class="mb-4">Pannes de plomberie courantes</h2>
+        <div class="row g-4">
+            <!-- Fuite d'eau -->
+            <div class="col-md-4">
+                <div class="card h-100 p-3 shadow-sm text-center">
+                    <div class="card-body">
+                        <div class="icon mb-3">
+                            <!-- Icône pour Fuite d'eau (remplacez 'icon-fuite' par la classe d'icône de votre page index) -->
+                            <i class="icon-fuite"></i>
+                        </div>
+                        <h5 class="card-title">Fuite d'eau</h5>
+                        <p class="card-text">Fuite d'eau au niveau d'un tuyau ou d'une installation.</p>
+                        <a href="#formulaire" class="btn btn-primary">Sélectionner cette panne</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Évier bouché -->
+            <div class="col-md-4">
+                <div class="card h-100 p-3 shadow-sm text-center">
+                    <div class="card-body">
+                        <div class="icon mb-3">
+                            <!-- Icône pour Évier bouché (remplacez 'icon-evier' par la classe d'icône de votre page index) -->
+                            <i class="icon-evier"></i>
+                        </div>
+                        <h5 class="card-title">Évier bouché</h5>
+                        <p class="card-text">Évier ou lavabo obstrué empêchant l'écoulement normal.</p>
+                        <a href="#formulaire" class="btn btn-primary">Sélectionner cette panne</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Toilette bouchée -->
+            <div class="col-md-4">
+                <div class="card h-100 p-3 shadow-sm text-center">
+                    <div class="card-body">
+                        <div class="icon mb-3">
+                            <!-- Icône pour Toilette bouchée (remplacez 'icon-toilette' par la classe d'icône de votre page index) -->
+                            <i class="icon-toilette"></i>
+                        </div>
+                        <h5 class="card-title">Toilette bouchée</h5>
+                        <p class="card-text">Toilette obstruée nécessitant un débouchage rapide.</p>
+                        <a href="#formulaire" class="btn btn-primary">Sélectionner cette panne</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section de description personnalisée -->
+    <section id="formulaire" class="container py-5">
+        <h2 class="mb-4">Décrivez votre panne</h2>
+        <form action="soumission.html" method="POST" class="bg-light p-4 rounded">
+            <div class="mb-3">
+                <label for="description" class="form-label">Description du problème</label>
+                <textarea class="form-control" id="description" name="description" rows="4" placeholder="Décrivez brièvement le problème rencontré..."></textarea>
+            </div>
+            <div class="mb-3">
+                <label for="urgence" class="form-label">Niveau d'urgence</label>
+                <select class="form-select" id="urgence" name="urgence">
+                    <option value="Normal">Normal</option>
+                    <option value="Urgent">Urgent</option>
+                    <option value="Très urgent">Très urgent</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-primary">Envoyer la demande</button>
+        </form>
+    </section>
+
+    <!-- Pied de page -->
+    <footer class="bg-dark text-center text-white py-3">
+        <p class="mb-0">&copy; 2024 Dépanneurs Express. Tous droits réservés.</p>
+    </footer>
+
+    <!-- Fichiers JS -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
